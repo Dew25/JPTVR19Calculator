@@ -18,10 +18,10 @@ public class Calculator {
      */
     public static void main(String[] args) {
         System.out.println("Программа калькулятор");
-        System.out.println("Введите первое число: (5)");
+        System.out.println("Введите первое число:");
         Scanner scanner = new Scanner(System.in);
         double number1 = scanner.nextDouble();
-        System.out.println("Введите второе число: (6)");
+        System.out.println("Введите второе число:");
         double number2 = scanner.nextDouble();
         System.out.println("Введите операцию: (+, -, *, /)");
         scanner.nextLine();
@@ -41,7 +41,7 @@ public class Calculator {
         }
         
         System.out.println("Результат: ");
-        System.out.println(result);
+        System.out.printf("%.2f%n%s%n%10.2f%n и %n%10.2f%n",result,"использовались числа:",number1,number2);
         System.out.println("Пока");
     }
     
